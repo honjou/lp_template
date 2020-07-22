@@ -41,6 +41,8 @@ HTML5のバリデーションだけだと心配なので、Laravelでのバリデーションも実装していま
 
 【ベーシック認証】test@example.com / testtest
 
+デモページはLaravel6.10.1で作成しています。
+
 
 # 文責
 
