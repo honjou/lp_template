@@ -1,0 +1,47 @@
+/*---------------------------------
+
+  ランディングページテンプレート
+
+---------------------------------*/
+
+/*
+ リンク
+———————————–*/
+a:link,a:visited{
+    color: #f25f70;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+a:hover.hover-pink{
+    color:#f25f70;
+}
+
+/*
+ レイアウト
+———————————–*/
+#main {
+    padding-top: 40px;
+    background-color: #eeeeee;
+}
+.box01{
+    background-color: #ffffff;
+}
+.box02{
+    background-color: #eeeeee;
+}
+
+/*
+ レスポンシブ
+———————————–*/
+.pc { display: block !important; margin-right: auto; margin-left: auto; }
+.sp { display: none !important; }
+
+@media only screen and (max-width: 575.98px) {
+    .pc { display: none !important; }
+    .sp { display: block !important; width: 100%; height: auto; margin-top: 16px; }
+}
