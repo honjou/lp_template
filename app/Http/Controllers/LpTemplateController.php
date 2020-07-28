@@ -44,7 +44,7 @@ class LpTemplateController extends Controller
     {
         // メール送信
         $data = $request->all(); // 入力されたデータを全て「配列」として受け取る
-        Mail::send(['text' =>'emails.LpTemplate'],$data,function($message) {$message->to('google@honjou.com')->subject('ランディングページからお問い合わせがありました。');});
+        Mail::send(['text' =>'emails.LpTemplate'],$data,function($message) {$message->to('送信先メールアドレス')->subject('ランディングページからお問い合わせがありました。');});
         return view('lp_template.finish');
     }
 }

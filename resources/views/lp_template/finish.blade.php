@@ -21,7 +21,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="{{ url('/lp-template/') }}">サイト名</a>
+        <a class="navbar-brand" href="{{ url('/auth/lp-template/') }}">サイト名</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -82,8 +82,12 @@
 <!-- Content section(商品・サービス説明) -->
 <section class="py-5 box01" id="3">
     <div class="container text-center">
-        <img class="pc" src="{{ asset('/assets/images/lp_template/pc/box03.png') }}" class="img-fluid">
-        <img class="sp" src="{{ asset('/assets/images/lp_template/mobile/box03.png') }}" class="img-fluid">
+        <img class="pc" src="{{ asset('/assets/images/lp_template/pc/box03_01.png') }}" class="img-fluid">
+        <img class="sp" src="{{ asset('/assets/images/lp_template/mobile/box03_01.png') }}" class="img-fluid">
+    </div>
+    <div class="container text-center">
+        <img class="pc" src="{{ asset('/assets/images/lp_template/pc/box03_02.png') }}" class="img-fluid">
+        <img class="sp" src="{{ asset('/assets/images/lp_template/mobile/box03_02.png') }}" class="img-fluid">
     </div>
 </section>
 

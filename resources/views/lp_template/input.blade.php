@@ -21,7 +21,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="{{ url('/lp-template/') }}">サイト名</a>
+        <a class="navbar-brand" href="{{ url('/auth/lp-template/') }}">サイト名</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -45,7 +45,7 @@
 
 <!-- Header - set the background image for the header in the line below -->
 <header id="main">
-    <img class="pc" src="{{ asset('/assets/images/lp_template/pc/main.png') }}" alt="PC用の画像">
+    <img class="pc" src="{{ asset('/assets/images/lp_template/pc/main.png') }}" alt="PC用の画像" class="img-fluid">
     <img class="sp" src="{{ asset('/assets/images/lp_template/mobile/main.png') }}" alt="スマホ用の画像" class="img-fluid" border="0">
 </header>
 
@@ -82,8 +82,12 @@
 <!-- Content section(商品・サービス説明) -->
 <section class="py-5 box01" id="3">
     <div class="container text-center">
-        <img class="pc" src="{{ asset('/assets/images/lp_template/pc/box03.png') }}" class="img-fluid">
-        <img class="sp" src="{{ asset('/assets/images/lp_template/mobile/box03.png') }}" class="img-fluid">
+        <img class="pc" src="{{ asset('/assets/images/lp_template/pc/box03_01.png') }}" class="img-fluid">
+        <img class="sp" src="{{ asset('/assets/images/lp_template/mobile/box03_01.png') }}" class="img-fluid">
+    </div>
+    <div class="container text-center">
+        <img class="pc" src="{{ asset('/assets/images/lp_template/pc/box03_02.png') }}" class="img-fluid">
+        <img class="sp" src="{{ asset('/assets/images/lp_template/mobile/box03_02.png') }}" class="img-fluid">
     </div>
 </section>
 
@@ -122,7 +126,7 @@
         </div>
 
         <!-- フォーム Start-->
-        <form method="post" action="{{ url('/lp-template') }}#6" class="needs-validation" novalidate>
+        <form method="post" action="{{ url('/auth/lp-template') }}#6" class="needs-validation" novalidate>
         {{ method_field('patch') }}
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
